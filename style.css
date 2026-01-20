@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    background-color: #b5c8ced6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#project-name {
+    margin: 80px 0 40px 0 ;
+    font-size: 40px;
+    font-weight: bold;
+    color: #2f5755a2;
+    letter-spacing: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mainContainer {
+    width: 100%;
+    max-width: 27%;
+    height: 600px;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: linear-gradient(120deg, #141f51, #286180);
+    border-radius: 15px;
+    box-shadow: 1px 0px 81px 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 0px 81px 6px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 0px 81px 6px rgba(0, 0, 0, 0.5);
+}
+
+#mainDiv {
+    height: auto;
+    /* border: 1px solid rgb(243, 235, 174); */
+    padding: 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#container {
+    width: 100%;
+    height: auto;
+    margin: 25px 0 0 0;
+    /* border: 4px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#errorImg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#errorImg img {
+    width: 70%;
+    height: 80%;
+}
+
+#welcomeImg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+#welcomeImg img {
+    width: 80%;
+    height: 100%;
+}
+
+#welcomeImg p {
+    font-size: 22px;
+    color: rgba(245, 245, 245, 0.732);
+    margin-top: 15px;
+}
+
+#inputDiv {
+    width: 75%;
+    margin: 40px 0 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#userInput {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    padding: 0 15px;
+    letter-spacing: 2px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    color: #222d67;
+    background-color: whitesmoke;
+}
+
+#searchBtn {
+    height: 35px;
+    position: absolute;
+    right: 0;
+    padding: 0 10px 0 10px;
+    font-size: 15px;
+    color: #222d67;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background: transparent;
+    border-radius: 15px;
+    transition: all 0.37s ease-in-out;
+}
+
+#searchBtn:hover {
+    background-color: rgba(172, 200, 242, 0.708);
+}
+
+.loader {
+    width: 50px;
+}
+
+/* .loader img {
+    background: transparent;
+} */
+#header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* border: 1px solid black; */
+    color: whitesmoke;
+}
+
+#header i {
+    color: whitesmoke;
+}
+
+#container #cityName {
+    font-size: 25px;
+    margin: 10px 0 7px 0;
+    letter-spacing: 4px;
+    color: whitesmoke;
+}
+
+#date {
+    font-size: 14px;
+    margin: 8px 0 0 0;
+    font-weight: bold;
+    color: whitesmoke;
+    /* border: 1px solid black; */
+}
+
+
+#weatherIconImg {
+    margin: 15px 0;
+    width: 120px;
+    /* border: 1px solid black; */
+}
+
+#temp-description {
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+    /* margin: 15px 0 0 0; */
+}
+
+#temp-description p {
+    font-size: 24px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#humidty-wind {
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    gap: 100px;
+}
+
+#humidity i {
+    margin-right: 7px;
+    color: whitesmoke;
+}
+
+#humidity {
+    color: whitesmoke;
+}
+
+#humidity span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 7px 0 0 0;
+}
+
+#windSpeed i {
+    margin-right: 7px;
+    color: whitesmoke;
+}
+
+#windSpeed {
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+#windSpeed span {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: whitesmoke;
+    margin: 7px 0 0 0;
+}
+
+@media (max-width:1530px) {
+    #mainContainer {
+        width: 100%;
+        max-width: 30%;
+        height: 600px;
+    }
+
+}
+
+@media (max-width:1300px) {
+    #mainContainer {
+        width: 100%;
+        max-width: 32%;
+        height: 600px;
+    }
+}
+
+@media (max-width:1150px) {
+    #mainContainer {
+        width: 100%;
+        max-width: 38%;
+        height: 600px;
+    }
+}
+
+@media (max-width: 980px) {
+    #mainContainer {
+        width: 100%;
+        max-width: 45%;
+        height: 600px;
+    }
+}
+
+@media (max-width: 850px) {
+    #mainContainer {
+        width: 100%;
+        max-width: 50%;
+        height: 600px;
+    }
+}
+
+@media (max-width: 740px) {
+    #mainContainer {
+        width: 100%;
+        max-width: 60%;
+        height: 600px;
+    }
+
+    #inputDiv {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    #mainContainer {
+        width: 100%;
+        max-width: 72%;
+        height: 80vh;
+    }
+
+    #inputDiv {
+        width: 80%;
+    }
+
+    #project-name {
+        margin: 40px auto;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    #mainContainer {
+        width: 100%;
+        max-width: 80%;
+        height: 80vh;
+    }
+
+    #inputDiv {
+        width: 80%;
+    }
+
+    #project-name {
+        margin: 40px auto;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 460px) {
+    #mainContainer {
+        width: 100%;
+        max-width: 90%;
+        height: 600px;
+    }
+
+    #inputDiv {
+        width: 85%;
+    }
+
+    #project-name {
+        font-size: 32px;
+    }
+}
