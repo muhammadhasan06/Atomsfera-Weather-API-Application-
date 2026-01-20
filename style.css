@@ -308,7 +308,7 @@ body {
     #mainContainer {
         width: 100%;
         max-width: 72%;
-        height: 80vh;
+        height: 550px;
     }
 
     #inputDiv {
@@ -322,10 +322,10 @@ body {
 }
 
 @media (max-width: 500px) {
-    #mainContainer {
+  #mainContainer {
         width: 100%;
         max-width: 80%;
-        height: 80vh;
+        height: 550px;
     }
 
     #inputDiv {
@@ -342,7 +342,7 @@ body {
     #mainContainer {
         width: 100%;
         max-width: 90%;
-        height: 600px;
+        height: 550px;
     }
 
     #inputDiv {
